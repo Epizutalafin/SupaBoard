@@ -122,8 +122,8 @@ h1 {
 }
 
 .reward img {
-  width: 30px;
-  height: 30px;
+  width: 38px;
+  height: 38px;
   object-fit: contain;
   pointer-events: none;
 }
