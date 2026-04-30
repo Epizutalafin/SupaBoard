@@ -1,6 +1,6 @@
 {
   "name": "Supa Quests",
-  "short_name": "Quests",
+  "short_name": "SupaQuests",
   "start_url": "./",
   "display": "standalone",
   "background_color": "#151515",
