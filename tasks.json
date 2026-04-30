@@ -6,19 +6,19 @@
       "label": "Stories",
       "rewards": {
         "5": {
-        "emoji": "✨",
-        "icon": "icons/spark.png",
-        "image": "rewards/stories-5.png"
-        }
+          "emoji": "✨",
+          "icon": "icons/spark.png",
+          "image": "rewards/stories-5.png"
+        },
         "10": {
-        "emoji": "🔥",
-        "icon": "icons/flame.png",
-        "image": "rewards/stories-10.png"
-        }
+          "emoji": "🔥",
+          "icon": "icons/flame.png",
+          "image": "rewards/stories-10.png"
+        },
         "15": {
-        "emoji": "🏆",
-        "icon": "icons/trophy.png",
-        "image": "rewards/stories-15.png"
+          "emoji": "🏆",
+          "icon": "icons/trophy.png",
+          "image": "rewards/stories-15.png"
         }
       },
       "tasks": [
@@ -43,19 +43,19 @@
       "label": "CommuStories",
       "rewards": {
         "5": {
-        "emoji": "🗝️",
-        "icon": "icons/key.png",
-        "image": "rewards/commu-5.png"
-        }
+          "emoji": "🗝️",
+          "icon": "icons/key.png",
+          "image": "rewards/commu-5.png"
+        },
         "10": {
-        "emoji": "⌛",
-        "icon": "icons/hourglass.png",
-        "image": "rewards/commu-10.png"
-        }
+          "emoji": "⌛",
+          "icon": "icons/hourglass.png",
+          "image": "rewards/commu-10.png"
+        },
         "15": {
-        "emoji": "👑",
-        "icon": "icons/crown.png",
-        "image": "rewards/commu-15.png"
+          "emoji": "👑",
+          "icon": "icons/crown.png",
+          "image": "rewards/commu-15.png"
         }
       },
       "tasks": [
@@ -80,19 +80,19 @@
       "label": "Illus — thème",
       "rewards": {
         "5": {
-        "emoji": "✒️",
-        "icon": "icons/feather.png",
-        "image": "rewards/theme-5.png"
-        }
+          "emoji": "✒️",
+          "icon": "icons/feather.png",
+          "image": "rewards/theme-5.png"
+        },
         "10": {
-        "emoji": "🕯️",
-        "icon": "icons/candle.png",
-        "image": "rewards/theme-10.png"
-        }
+          "emoji": "🕯️",
+          "icon": "icons/candle.png",
+          "image": "rewards/theme-10.png"
+        },
         "15": {
-        "emoji": "🌙",
-        "icon": "icons/moon.png",
-        "image": "rewards/theme-15.png"
+          "emoji": "🌙",
+          "icon": "icons/moon.png",
+          "image": "rewards/theme-15.png"
         }
       },
       "tasks": [
@@ -117,19 +117,19 @@
       "label": "Illus — style",
       "rewards": {
         "5": {
-        "emoji": "🖌️",
-        "icon": "icons/brush.png",
-        "image": "rewards/style-5.png"
-        }
+          "emoji": "🖌️",
+          "icon": "icons/brush.png",
+          "image": "rewards/style-5.png"
+        },
         "10": {
-        "emoji": "🎨",
-        "icon": "icons/palette.png",
-        "image": "rewards/style-10.png"
-        }
+          "emoji": "🎨",
+          "icon": "icons/palette.png",
+          "image": "rewards/style-10.png"
+        },
         "15": {
-        "emoji": "💎",
-        "icon": "icons/diamond.png",
-        "image": "rewards/style-15.png"
+          "emoji": "💎",
+          "icon": "icons/diamond.png",
+          "image": "rewards/style-15.png"
         }
       },
       "tasks": [
