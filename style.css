@@ -121,6 +121,13 @@ h1 {
   box-shadow: 0 0 18px rgba(201, 164, 92, 0.35);
 }
 
+.reward img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+  pointer-events: none;
+}
+
 .task-list {
   list-style: none;
   padding: 0;
