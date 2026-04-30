@@ -126,29 +126,36 @@ h1 {
   padding: 0;
   margin: 0;
   display: grid;
-  gap: 10px;
+  gap: 0;
 }
 
 .task {
   display: flex;
-  align-items: flex-start;
-  gap: 12px;
-  padding: 13px 14px;
-  background: rgba(255, 255, 255, 0.045);
-  border: 1px solid var(--border);
-  border-radius: 12px;
-  line-height: 1.35;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 4px;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid rgba(201, 164, 92, 0.18);
+  border-radius: 0;
+  line-height: 1.25;
 }
 
 .task input {
-  margin-top: 3px;
+  margin: 0;
   accent-color: var(--accent);
-  transform: scale(1.15);
+  transform: scale(1.05);
+  flex: 0 0 auto;
+}
+
+.task span {
+  flex: 1;
 }
 
 .task.done {
   color: var(--muted);
   text-decoration: line-through;
+  opacity: 0.72;
 }
 
 .modal {
