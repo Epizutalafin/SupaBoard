@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Supa Quests</title>
+  <link rel="stylesheet" href="style.css?v=1" />
+</head>
+<body>
+  <main class="app">
+    <h1 id="title">QUESTS</h1>
+
+    <nav id="tabs" class="tabs"></nav>
+
+    <section class="panel">
+      <div class="progress-header">
+        <span id="categoryTitle"></span>
+        <span id="count">0 / 15</span>
+      </div>
+
+      <div class="progress-bar">
+        <div id="progressFill"></div>
+      </div>
+
+      <div id="rewards" class="rewards"></div>
+
+      <ul id="taskList" class="task-list"></ul>
+    </section>
+  </main>
+
+  <div id="modal" class="modal hidden">
+    <div class="modal-content">
+      <button id="closeModal" class="close">×</button>
+      <img id="rewardImage" src="" alt="Récompense débloquée" />
+      <a id="downloadReward" download>Télécharger</a>
+    </div>
+  </div>
+
+  <script src="script.js?v=1"></script>
+</body>
+</html>
