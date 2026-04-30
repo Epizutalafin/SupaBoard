@@ -128,7 +128,14 @@ function renderRewards() {
   Object.entries(category.rewards).forEach(([threshold, reward]) => {
     const button = document.createElement("button");
     button.className = "reward";
+    if (reward.icon) {
+    const icon = document.createElement("img");
+    icon.src = reward.icon;
+    icon.alt = reward.emoji || "Récompense";
+    button.appendChild(icon);
+    } else {
     button.textContent = reward.emoji;
+}
     button.title = `${threshold} défis`;
 
     if (checkedCount >= Number(threshold)) {
