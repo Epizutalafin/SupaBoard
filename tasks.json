@@ -1,0 +1,106 @@
+{
+  "season": "2026_05",
+  "title": "MAY QUESTS",
+  "categories": {
+    "stories": {
+      "label": "Stories",
+      "rewards": {
+        "5": { "emoji": "🌙", "image": "rewards/stories-5.png" },
+        "10": { "emoji": "🗝️", "image": "rewards/stories-10.png" },
+        "15": { "emoji": "👑", "image": "rewards/stories-15.png" }
+      },
+      "tasks": [
+        "Lancer une nouvelle story.",
+        "Faire une scène sous la pluie.",
+        "Écrire un aveu indirect.",
+        "Utiliser un silence comme tension.",
+        "Faire intervenir un secret.",
+        "Créer une scène nocturne.",
+        "Faire une réponse de plus de 1000 caractères.",
+        "Relancer une ancienne story.",
+        "Faire entrer un objet symbolique.",
+        "Écrire une scène douce.",
+        "Écrire une scène tendue.",
+        "Faire un retournement émotionnel.",
+        "Jouer une hésitation.",
+        "Faire une fin de réponse en cliffhanger.",
+        "Poster un screen marquant."
+      ]
+    },
+    "commustories": {
+      "label": "CommuStories",
+      "rewards": {
+        "5": { "emoji": "💬", "image": "rewards/commu-5.png" },
+        "10": { "emoji": "🔥", "image": "rewards/commu-10.png" },
+        "15": { "emoji": "💎", "image": "rewards/commu-15.png" }
+      },
+      "tasks": [
+        "Commenter une story d’une autre personne.",
+        "Réagir à un screen.",
+        "Partager une idée de rebondissement.",
+        "Encourager une création.",
+        "Poster une recommandation Supa.",
+        "Participer à une discussion RP.",
+        "Partager une anecdote drôle.",
+        "Donner un avis constructif.",
+        "Poster un mini-extrait.",
+        "Faire découvrir un Supa.",
+        "Répondre à une question communautaire.",
+        "Proposer un thème.",
+        "Partager une inspi visuelle.",
+        "Réagir à une illu.",
+        "Poster un screen coup de cœur."
+      ]
+    },
+    "illus_theme": {
+      "label": "Illus — thème",
+      "rewards": {
+        "5": { "emoji": "🎨", "image": "rewards/theme-5.png" },
+        "10": { "emoji": "🌌", "image": "rewards/theme-10.png" },
+        "15": { "emoji": "🖼️", "image": "rewards/theme-15.png" }
+      },
+      "tasks": [
+        "Créer une illu nocturne.",
+        "Créer une illu printanière.",
+        "Créer une illu avec pluie.",
+        "Créer une illu avec miroir.",
+        "Créer une illu en intérieur sombre.",
+        "Créer une illu avec fleurs.",
+        "Créer une illu très lumineuse.",
+        "Créer une illu mélancolique.",
+        "Créer une illu inquiétante.",
+        "Créer une illu romantique.",
+        "Créer une illu avec objet symbolique.",
+        "Créer une illu en extérieur.",
+        "Créer une illu avec clair-obscur.",
+        "Créer une illu festive.",
+        "Créer une illu dramatique."
+      ]
+    },
+    "illus_style": {
+      "label": "Illus — style",
+      "rewards": {
+        "5": { "emoji": "✨", "image": "rewards/style-5.png" },
+        "10": { "emoji": "🖌️", "image": "rewards/style-10.png" },
+        "15": { "emoji": "🏆", "image": "rewards/style-15.png" }
+      },
+      "tasks": [
+        "Tester un style smooth.",
+        "Tester un style chibi.",
+        "Tester un style semi-réaliste.",
+        "Tester un style tarot.",
+        "Tester un style aquarelle.",
+        "Tester un style néon.",
+        "Tester un style noir et or.",
+        "Tester un style pastel.",
+        "Tester un style gothique.",
+        "Tester un style cinematic.",
+        "Tester un style minimaliste.",
+        "Tester un style portrait serré.",
+        "Tester un style full body.",
+        "Tester une composition diagonale.",
+        "Tester une palette inhabituelle."
+      ]
+    }
+  }
+}
