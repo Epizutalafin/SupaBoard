@@ -22,21 +22,21 @@
         }
       },
       "tasks": [
-        "Lancer une nouvelle story.",
-        "Faire une scène sous la pluie.",
-        "Écrire un aveu indirect.",
+        "Se trouver dehors au moment d'une averse printanière.",
+        "Offrir ou recevoir un brin de muguet.",
+        "Se débrouiller pour que le Supa recule d'un pas.",
         "Utiliser un silence comme tension.",
-        "Faire intervenir un secret.",
+        "Déclencher l'emotion "surprised" chez le Supa.",
         "Créer une scène nocturne.",
-        "Faire une réponse de plus de 1000 caractères.",
-        "Relancer une ancienne story.",
-        "Faire entrer un objet symbolique.",
-        "Écrire une scène douce.",
-        "Écrire une scène tendue.",
-        "Faire un retournement émotionnel.",
+        "Organiser un pique-nique qui tourne mal.",
+        "Arriver à cacher une vérité pendant au moins 5 réponses.",
+        "Offrir un objet étrange mais symbolique.",
+        "Main frôlée : créer de la tension sans baiser ni déclaration.",
+        "Aider l'autre à trier son grenier, sa chambre, son bureau, et tomber sur un objet... intéressant, hinhin.",
+        "Une inconnue me gifle en pleine rue en m'appelant par un autre prénom.",
         "Jouer une hésitation.",
         "Faire une fin de réponse en cliffhanger.",
-        "Poster un screen marquant."
+        "Avoir un rdv avec quelqu'un d'autre que le Supa."
       ]
     },
     "commustories": {
@@ -59,21 +59,21 @@
         }
       },
       "tasks": [
-        "Commenter une story d’une autre personne.",
-        "Réagir à un screen.",
-        "Partager une idée de rebondissement.",
-        "Encourager une création.",
-        "Poster une recommandation Supa.",
-        "Participer à une discussion RP.",
-        "Partager une anecdote drôle.",
-        "Donner un avis constructif.",
-        "Poster un mini-extrait.",
-        "Faire découvrir un Supa.",
-        "Répondre à une question communautaire.",
-        "Proposer un thème.",
-        "Partager une inspi visuelle.",
-        "Réagir à une illu.",
-        "Poster un screen coup de cœur."
+        "Défi duo. Il te regarde intensément. A, tu louches, B, tu lui demandes 5 €.",
+        "Mettre autre chose qu'un coeur en réaction à une image postée dans Supa-art.",
+        "Défi duo. Le Supa te tend la main. A, tu la chatouilles, B, tu la mords.",
+        "Défi à quatre. Un objet symbolisant un Cavalier de l'Apocalypse apparaît. Chacun choisit un cavalier différent.",
+        "Poster une illustration de ton Supa préféré dans le Supa-art.",
+        "Défi duo. Le Supa s'endort contre toi. A, le câliner, B, lui dessiner sur le visage.",
+        "Partager une anecdote lors d'un run en cours avec un Supa dans Story.",
+        "Défi à trois. Aller à un festival ayant pour thème : Amour, Gloire ou Beauté.",
+        "Dire bonjour sur le Discord.",
+        "Défi boisson. Choisis le cocktail suivant dans ta run : Adios Motherfucker, Jungle Bird, Bloody Mary ou Virgin Mojito.",
+        "Filer une idée de Supa Quest (eh ouais, malinx le lynx !)",
+        "Tu introduis un nouveau PNJ dans ta run : c'est quelqu'un du Discord !",
+        "Expliquer sur le Discord ce que tu aimes chez un Supa (celui de ton choix).",
+        "Défi duo. Le Supa est sur le point de t'embrasser. A, éternuer, B, fermer les yeux.",
+        "Participer à une animation ou un jeu/challenge sur la commu, quel qu'il soit."
       ]
     },
     "illus_theme": {
@@ -96,21 +96,21 @@
         }
       },
       "tasks": [
-        "Créer une illu nocturne.",
-        "Créer une illu printanière.",
-        "Créer une illu avec pluie.",
-        "Créer une illu avec miroir.",
-        "Créer une illu en intérieur sombre.",
-        "Créer une illu avec fleurs.",
-        "Créer une illu très lumineuse.",
-        "Créer une illu mélancolique.",
-        "Créer une illu inquiétante.",
-        "Créer une illu romantique.",
-        "Créer une illu avec objet symbolique.",
-        "Créer une illu en extérieur.",
-        "Créer une illu avec clair-obscur.",
-        "Créer une illu festive.",
-        "Créer une illu dramatique."
+        "Scène de nuit : pluie de mai, le Supa sous un parapluie.",
+        "Cabane dans les arbres : le Supa prend le thé ou le café.",
+        "Gros plan sur le Supa qui lace une chaussure, chaussure mise en avant, bien sûr.",
+        "Plan macro d'un Supa soufflant sur un pissenlit géant.",
+        "Grand nettoyage fantaisiste : fenêtres ouvertes et grand bordel.",
+        "Objet symbolique : le Supa tient un objet qui le représente, mais de manière pas trop évidente.",
+        "Le Supa au milieu d'un champ monochrome, ciel immense.",
+        "Reflet du Supa dans une flaque après l'averse.",
+        "Arbre en fleurs hanté.",
+        "Serre abandonnée, envahie de plantes, perspective fuyante centrale.",
+        "Le Supa en train de prendre son goûter préféré.",
+        "Portrait ultra dynamique, énergie brute.",
+        "Clair-obscur, ombres profondes dévorant une partie du décor et du Supa.",
+        "Le Supa doit être dans une pose qui transpire la confiance en soi.",
+        "Couronne de fleurs printanières : va-t-il la porter ou l'offrir ?"
       ]
     },
     "illus_style": {
@@ -133,21 +133,21 @@
         }
       },
       "tasks": [
-        "Tester un style smooth.",
-        "Tester un style chibi.",
-        "Tester un style semi-réaliste.",
-        "Tester un style tarot.",
-        "Tester un style aquarelle.",
-        "Tester un style néon.",
-        "Tester un style noir et or.",
-        "Tester un style pastel.",
-        "Tester un style gothique.",
-        "Tester un style cinematic.",
-        "Tester un style minimaliste.",
-        "Tester un style portrait serré.",
-        "Tester un style full body.",
-        "Tester une composition diagonale.",
-        "Tester une palette inhabituelle."
+        "Impressionisme : touches visibles, lumière filtrée par les feuillées, couleurs vibrantes.",
+        "Art Nouveau : lignes courbes élégantes, cadres floraux détaillés et raffinement décoratif.",
+        "Aquarelle botanique : fond clair, traits fins à l'encore, lavis translucides.",
+        "Esthétique chibi : ambiance douce et pastel.",
+        "Tester une palette de couleurs inhabituelle.",
+        "Estampes japonaises ou illustration à l'encre !",
+        "L'image doit avoir une perspective qui change un peu.",
+        "Vitrail : Supa et décor segmentés en verre coloré.",
+        "Style gothique (architecture, ambiance, look...).",
+        "Lomographie polarisée : deux couleurs saturées, vignettage sombre.",
+        "Cyberpunk de jour : néons de couleurs vives sous un grand soleil, ambiance pop et futuriste.",
+        "Huile baroque dramatique : matière riche, clair-obscur intense, jeu théâtral.",
+        "Golden Hour : lumière chaude, lens flare solaire.",
+        "L'image doit être générée avec un bokeh lumineux.",
+        "Close-up ! Plus près, encore plus près... Là, c'est parfait."
       ]
     }
   }
