@@ -1,6 +1,10 @@
 let data;
 let currentCategoryKey;
 
+/* =========================
+   DOM
+========================= */
+
 const tabs = document.getElementById("tabs");
 const title = document.getElementById("title");
 const categoryTitle = document.getElementById("categoryTitle");
@@ -14,14 +18,20 @@ const rewardImage = document.getElementById("rewardImage");
 const downloadReward = document.getElementById("downloadReward");
 const closeModal = document.getElementById("closeModal");
 
+const faqBtn = document.getElementById("faqBtn");
 const faqModal = document.getElementById("faqModal");
 const faqClose = document.getElementById("faqClose");
 const faqText = document.getElementById("faqText");
+
+/* =========================
+   Init
+========================= */
 
 fetch("tasks.json?v=2026_05")
   .then(response => response.json())
   .then(json => {
     data = json;
+
     title.textContent = data.title;
 
     const keys = Object.keys(data.categories);
@@ -30,6 +40,10 @@ fetch("tasks.json?v=2026_05")
     renderTabs();
     renderCategory();
   });
+
+/* =========================
+   Storage
+========================= */
 
 function storageKey(categoryKey) {
   return `supa_quests_${data.season}_${categoryKey}`;
@@ -41,8 +55,15 @@ function getChecked(categoryKey) {
 }
 
 function saveChecked(categoryKey, checked) {
-  localStorage.setItem(storageKey(categoryKey), JSON.stringify(checked));
+  localStorage.setItem(
+    storageKey(categoryKey),
+    JSON.stringify(checked)
+  );
 }
+
+/* =========================
+   Tabs
+========================= */
 
 function renderTabs() {
   tabs.innerHTML = "";
@@ -65,15 +86,11 @@ function renderTabs() {
 
     tabs.appendChild(button);
   });
-
-  const faqBtn = document.createElement("button");
-  faqBtn.className = "tab faq-tab";
-  faqBtn.textContent = "FAQ";
-
-  faqBtn.addEventListener("click", openFaq);
-
-  tabs.appendChild(faqBtn);
 }
+
+/* =========================
+   Category
+========================= */
 
 function renderCategory() {
   const category = data.categories[currentCategoryKey];
@@ -97,12 +114,13 @@ function renderCategory() {
     checkbox.addEventListener("change", () => {
       const updated = getChecked(currentCategoryKey);
 
-      if (checkbox.checked && !updated.includes(index)) {
-        updated.push(index);
-      }
-
-      if (!checkbox.checked) {
+      if (checkbox.checked) {
+        if (!updated.includes(index)) {
+          updated.push(index);
+        }
+      } else {
         const position = updated.indexOf(index);
+
         if (position !== -1) {
           updated.splice(position, 1);
         }
@@ -117,6 +135,7 @@ function renderCategory() {
 
     li.appendChild(checkbox);
     li.appendChild(label);
+
     taskList.appendChild(li);
   });
 
@@ -124,16 +143,26 @@ function renderCategory() {
   renderRewards();
 }
 
+/* =========================
+   Progress
+========================= */
+
 function renderProgress() {
   const category = data.categories[currentCategoryKey];
   const checkedCount = getChecked(currentCategoryKey).length;
   const total = category.tasks.length;
 
-  const percent = total ? (checkedCount / total) * 100 : 0;
+  const percent = total
+    ? (checkedCount / total) * 100
+    : 0;
 
   count.textContent = `${checkedCount} / ${total}`;
   progressFill.style.width = `${percent}%`;
 }
+
+/* =========================
+   Rewards
+========================= */
 
 function renderRewards() {
   const category = data.categories[currentCategoryKey];
@@ -143,18 +172,20 @@ function renderRewards() {
 
   Object.entries(category.rewards).forEach(([threshold, reward]) => {
     const button = document.createElement("button");
+
     button.className = "reward";
+    button.title = `${threshold} défis`;
 
     if (reward.icon) {
       const icon = document.createElement("img");
+
       icon.src = reward.icon;
       icon.alt = reward.emoji || "Récompense";
+
       button.appendChild(icon);
     } else {
       button.textContent = reward.emoji;
     }
-
-    button.title = `${threshold} défis`;
 
     if (checkedCount >= Number(threshold)) {
       button.classList.add("unlocked");
@@ -171,10 +202,15 @@ function renderRewards() {
 function openReward(imagePath) {
   rewardImage.src = imagePath;
   downloadReward.href = imagePath;
-  downloadReward.download = imagePath.split("/").pop();
+  downloadReward.download =
+    imagePath.split("/").pop();
 
   modal.classList.remove("hidden");
 }
+
+/* =========================
+   FAQ
+========================= */
 
 function openFaq() {
   fetch("faq.txt")
@@ -186,8 +222,10 @@ function openFaq() {
 }
 
 /* =========================
-   Reward modal
+   Events
 ========================= */
+
+faqBtn.addEventListener("click", openFaq);
 
 closeModal.addEventListener("click", () => {
   modal.classList.add("hidden");
@@ -198,10 +236,6 @@ modal.addEventListener("click", event => {
     modal.classList.add("hidden");
   }
 });
-
-/* =========================
-   FAQ modal
-========================= */
 
 faqClose.addEventListener("click", () => {
   faqModal.classList.add("hidden");
