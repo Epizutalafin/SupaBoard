@@ -3,23 +3,29 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>Supa Quests</title>
+
   <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32.png">
   <link rel="apple-touch-icon" href="favicon/apple-touch-icon.png">
   <link rel="manifest" href="manifest.webmanifest">
   <meta name="theme-color" content="#151515">
+
   <link rel="stylesheet" href="style.css?v=1" />
 </head>
+
 <body>
   <main class="app">
+
     <div class="top-bar">
-  <h1 id="title">Quests</h1>
-  <button id="faqBtn" class="tab faq-mini">FAQ</button>
-</div>
+      <h1 id="title">Quests</h1>
+      <button id="faqBtn" class="tab faq-mini">FAQ</button>
+    </div>
 
     <nav id="tabs" class="tabs"></nav>
 
     <section class="panel">
+
       <div class="progress-header">
         <span id="categoryTitle"></span>
         <span id="count">0 / 15</span>
@@ -32,22 +38,36 @@
       <div id="rewards" class="rewards"></div>
 
       <ul id="taskList" class="task-list"></ul>
+
     </section>
   </main>
 
+  <!-- Popup récompenses -->
   <div id="modal" class="modal hidden">
     <div class="modal-content">
       <button id="closeModal" class="close">×</button>
-      <img id="rewardImage" src="" alt="Récompense débloquée" />
-      <a id="downloadReward" download>Télécharger</a>
+
+      <img
+        id="rewardImage"
+        src=""
+        alt="Récompense débloquée"
+      />
+
+      <a id="downloadReward" download>
+        Télécharger
+      </a>
+    </div>
+  </div>
+
+  <!-- Popup FAQ -->
+  <div id="faqModal" class="modal hidden">
+    <div class="modal-content faq-box">
+      <button id="faqClose" class="close">×</button>
+      <pre id="faqText"></pre>
     </div>
   </div>
 
   <script src="script.js?v=1"></script>
-<div id="faqModal" class="modal hidden">
-  <div class="modal-content faq-box">
-    <button id="faqClose" class="close">×</button>
-    <pre id="faqText"></pre>
-  </div>
-</div>
+
+</body>
 </html>
