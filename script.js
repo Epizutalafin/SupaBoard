@@ -14,6 +14,10 @@ const rewardImage = document.getElementById("rewardImage");
 const downloadReward = document.getElementById("downloadReward");
 const closeModal = document.getElementById("closeModal");
 
+const faqModal = document.getElementById("faqModal");
+const faqClose = document.getElementById("faqClose");
+const faqText = document.getElementById("faqText");
+
 fetch("tasks.json?v=2026_05")
   .then(response => response.json())
   .then(json => {
@@ -45,6 +49,7 @@ function renderTabs() {
 
   Object.entries(data.categories).forEach(([key, category]) => {
     const button = document.createElement("button");
+
     button.className = "tab";
     button.textContent = category.label;
 
@@ -60,6 +65,14 @@ function renderTabs() {
 
     tabs.appendChild(button);
   });
+
+  const faqBtn = document.createElement("button");
+  faqBtn.className = "tab faq-tab";
+  faqBtn.textContent = "FAQ";
+
+  faqBtn.addEventListener("click", openFaq);
+
+  tabs.appendChild(faqBtn);
 }
 
 function renderCategory() {
@@ -90,7 +103,9 @@ function renderCategory() {
 
       if (!checkbox.checked) {
         const position = updated.indexOf(index);
-        if (position !== -1) updated.splice(position, 1);
+        if (position !== -1) {
+          updated.splice(position, 1);
+        }
       }
 
       saveChecked(currentCategoryKey, updated);
@@ -113,6 +128,7 @@ function renderProgress() {
   const category = data.categories[currentCategoryKey];
   const checkedCount = getChecked(currentCategoryKey).length;
   const total = category.tasks.length;
+
   const percent = total ? (checkedCount / total) * 100 : 0;
 
   count.textContent = `${checkedCount} / ${total}`;
@@ -128,18 +144,21 @@ function renderRewards() {
   Object.entries(category.rewards).forEach(([threshold, reward]) => {
     const button = document.createElement("button");
     button.className = "reward";
+
     if (reward.icon) {
-    const icon = document.createElement("img");
-    icon.src = reward.icon;
-    icon.alt = reward.emoji || "Récompense";
-    button.appendChild(icon);
+      const icon = document.createElement("img");
+      icon.src = reward.icon;
+      icon.alt = reward.emoji || "Récompense";
+      button.appendChild(icon);
     } else {
-    button.textContent = reward.emoji;
-}
+      button.textContent = reward.emoji;
+    }
+
     button.title = `${threshold} défis`;
 
     if (checkedCount >= Number(threshold)) {
       button.classList.add("unlocked");
+
       button.addEventListener("click", () => {
         openReward(reward.image);
       });
@@ -153,8 +172,22 @@ function openReward(imagePath) {
   rewardImage.src = imagePath;
   downloadReward.href = imagePath;
   downloadReward.download = imagePath.split("/").pop();
+
   modal.classList.remove("hidden");
 }
+
+function openFaq() {
+  fetch("faq.txt")
+    .then(response => response.text())
+    .then(text => {
+      faqText.textContent = text;
+      faqModal.classList.remove("hidden");
+    });
+}
+
+/* =========================
+   Reward modal
+========================= */
 
 closeModal.addEventListener("click", () => {
   modal.classList.add("hidden");
@@ -166,20 +199,16 @@ modal.addEventListener("click", event => {
   }
 });
 
-const faqBtn = document.getElementById("faqBtn");
-const faqModal = document.getElementById("faqModal");
-const faqClose = document.getElementById("faqClose");
-const faqText = document.getElementById("faqText");
+/* =========================
+   FAQ modal
+========================= */
 
-faqBtn.onclick = async () => {
-  faqModal.classList.remove("hidden");
-  faqText.textContent = await fetch("faq.txt").then(r => r.text());
-};
+faqClose.addEventListener("click", () => {
+  faqModal.classList.add("hidden");
+});
 
-faqClose.onclick = () => faqModal.classList.add("hidden");
-
-faqModal.onclick = (e) => {
-  if(e.target === faqModal){
+faqModal.addEventListener("click", event => {
+  if (event.target === faqModal) {
     faqModal.classList.add("hidden");
   }
-};
+});
