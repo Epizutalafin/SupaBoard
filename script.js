@@ -216,7 +216,7 @@ function openFaq() {
   fetch("faq.html")
     .then(response => response.text())
     .then(text => {
-      faqText.textContent = text;
+      faqText.innerHTML = text;
       faqModal.classList.remove("hidden");
     });
 }
