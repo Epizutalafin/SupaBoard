@@ -213,7 +213,7 @@ function openReward(imagePath) {
 ========================= */
 
 function openFaq() {
-  fetch("faq.txt")
+  fetch("faq.html")
     .then(response => response.text())
     .then(text => {
       faqText.textContent = text;
