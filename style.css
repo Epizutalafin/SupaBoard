@@ -218,3 +218,41 @@ h1 {
   text-decoration: none;
   font-weight: bold;
 }
+
+#faqBtn{
+  position:fixed;
+  right:15px;
+  bottom:15px;
+  z-index:999;
+}
+
+#faqModal{
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,.6);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  z-index:1000;
+}
+
+.hidden{
+  display:none !important;
+}
+
+.faq-box{
+  background:#1b1b1b;
+  color:white;
+  padding:20px;
+  width:500px;
+  max-width:90%;
+  border-radius:12px;
+}
+
+#faqClose{
+  float:right;
+}
+
+#faqText{
+  white-space:pre-wrap;
+}
