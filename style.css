@@ -60,9 +60,21 @@ h1{
 
   padding:6px 12px;
   min-width:auto;
-
   font-size:.82rem;
-  opacity:.9;
+  opacity:.92;
+}
+
+@media (max-width:700px){
+
+  .faq-mini{
+    right:0;
+    top:0;
+    transform:none;
+
+    padding:5px 10px;
+    font-size:.75rem;
+  }
+
 }
 
 /* =========================
