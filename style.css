@@ -256,3 +256,17 @@ h1 {
 #faqText{
   white-space:pre-wrap;
 }
+
+.top-bar{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+}
+
+.faq-mini{
+  padding:6px 12px;
+  font-size:.82rem;
+  min-width:auto;
+  opacity:.88;
+}
