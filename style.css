@@ -320,16 +320,17 @@ h1{
 ========================= */
 
 .faq-box{
-  width:min(560px,92vw);
+  width:min(620px,92vw);
+  max-height:82vh;
+  overflow-y:auto;
 }
 
 #faqText{
-  margin:0;
+  white-space:normal;
   text-align:left;
-  white-space:pre-wrap;
   line-height:1.55;
-  color:var(--text);
-  font-family:inherit;
+  font-family:Georgia,"Times New Roman",serif;
+  padding-right:6px;
 }
 
 /* =========================
