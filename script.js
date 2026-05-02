@@ -165,3 +165,21 @@ modal.addEventListener("click", event => {
     modal.classList.add("hidden");
   }
 });
+
+const faqBtn = document.getElementById("faqBtn");
+const faqModal = document.getElementById("faqModal");
+const faqClose = document.getElementById("faqClose");
+const faqText = document.getElementById("faqText");
+
+faqBtn.onclick = async () => {
+  faqModal.classList.remove("hidden");
+  faqText.textContent = await fetch("faq.txt").then(r => r.text());
+};
+
+faqClose.onclick = () => faqModal.classList.add("hidden");
+
+faqModal.onclick = (e) => {
+  if(e.target === faqModal){
+    faqModal.classList.add("hidden");
+  }
+};
