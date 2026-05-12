@@ -300,4 +300,49 @@ h1{
   .rewards{
     gap:26px;
   }
+  .oath-overlay{
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,.72);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  z-index:9999;
+  padding:20px;
+}
+
+.oath-overlay.hidden{
+  display:none;
+}
+
+.oath-modal{
+  width:min(520px,92vw);
+  background:#232323;
+  border:1px solid rgba(255,255,255,.12);
+  border-radius:18px;
+  padding:28px;
+  text-align:center;
+  color:#f5f0e8;
+  box-shadow:0 12px 40px rgba(0,0,0,.4);
+}
+
+.oath-modal h2{
+  margin-top:0;
+  color:#c9a45c;
+}
+
+.oath-modal p{
+  line-height:1.7;
+  color:#d8d2c8;
+}
+
+.oath-modal button{
+  margin-top:18px;
+  border:none;
+  border-radius:999px;
+  padding:12px 20px;
+  background:#c9a45c;
+  color:#151515;
+  font-weight:bold;
+  cursor:pointer;
 }
