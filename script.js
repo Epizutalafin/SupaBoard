@@ -245,6 +245,7 @@ faqModal.addEventListener("click", event => {
   if (event.target === faqModal) {
     faqModal.classList.add("hidden");
   }
+  });
 
    const OATH_VERSION = "v1";
 
