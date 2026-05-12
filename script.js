@@ -245,4 +245,31 @@ faqModal.addEventListener("click", event => {
   if (event.target === faqModal) {
     faqModal.classList.add("hidden");
   }
+
+   const OATH_VERSION = "v1";
+
+window.addEventListener("DOMContentLoaded", () => {
+
+  const overlay = document.getElementById("quest-oath-overlay");
+  const button = document.getElementById("accept-oath");
+
+  if (!overlay || !button) return;
+
+  const hasAccepted =
+    localStorage.getItem("supaquest_oath");
+
+  if (hasAccepted !== OATH_VERSION) {
+    overlay.classList.remove("hidden");
+  }
+
+  button.addEventListener("click", () => {
+
+    localStorage.setItem(
+      "supaquest_oath",
+      OATH_VERSION
+    );
+
+    overlay.classList.add("hidden");
+  });
+
 });
