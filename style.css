@@ -300,6 +300,9 @@ h1{
   .rewards{
     gap:26px;
   }
+
+  }
+
   .oath-overlay{
   position:fixed;
   inset:0;
